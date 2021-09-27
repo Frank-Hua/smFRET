@@ -1,0 +1,938 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>2000</width>
+    <height>1000</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QHBoxLayout" name="horizontalLayout_2">
+    <property name="spacing">
+     <number>5</number>
+    </property>
+    <property name="leftMargin">
+     <number>3</number>
+    </property>
+    <property name="topMargin">
+     <number>7</number>
+    </property>
+    <property name="rightMargin">
+     <number>3</number>
+    </property>
+    <property name="bottomMargin">
+     <number>7</number>
+    </property>
+    <item>
+     <widget class="QWidget" name="widget" native="true">
+      <property name="minimumSize">
+       <size>
+        <width>300</width>
+        <height>0</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>300</width>
+        <height>16777215</height>
+       </size>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout">
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayoutMovie">
+         <item>
+          <widget class="QLabel" name="nMovie">
+           <property name="text">
+            <string>Movie</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QSpinBox" name="spinBoxMovie"/>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <widget class="QCheckBox" name="checkBoxMovie">
+         <property name="text">
+          <string>Include Movie</string>
+         </property>
+         <property name="checked">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="Line" name="line_2">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QFrame" name="frame">
+         <property name="frameShape">
+          <enum>QFrame::StyledPanel</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout_3">
+          <item>
+           <widget class="QLabel" name="fretCorrections">
+            <property name="text">
+             <string>FRET Corrections:</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <layout class="QHBoxLayout" name="horizontalLayoutDdBsl">
+            <item>
+             <widget class="QLabel" name="ddBsl">
+              <property name="text">
+               <string>Dd Bsl</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QDoubleSpinBox" name="doubleSpinBoxDdBsl"/>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <layout class="QHBoxLayout" name="horizontalLayoutAdBsl">
+            <item>
+             <widget class="QLabel" name="adBsl">
+              <property name="text">
+               <string>Ad Bsl</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QDoubleSpinBox" name="doubleSpinBoxAdBsl"/>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <layout class="QHBoxLayout" name="horizontalLayoutAaBsl">
+            <item>
+             <widget class="QLabel" name="aaBsl">
+              <property name="text">
+               <string>Aa Bsl</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QDoubleSpinBox" name="doubleSpinBoxAaBsl"/>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <layout class="QHBoxLayout" name="horizontalLayoutReflection">
+            <item>
+             <widget class="QLabel" name="Reflection">
+              <property name="text">
+               <string>Reflection</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QDoubleSpinBox" name="doubleSpinBoxReflection"/>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <layout class="QHBoxLayout" name="horizontalLayoutDonorLeakage">
+            <item>
+             <widget class="QLabel" name="donorLeakage">
+              <property name="text">
+               <string>Donor Leakage</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QDoubleSpinBox" name="doubleSpinBoxDonorLeakage"/>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <layout class="QHBoxLayout" name="horizontalLayoutDirectEx">
+            <item>
+             <widget class="QLabel" name="directEx">
+              <property name="text">
+               <string>Direct Ex</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QDoubleSpinBox" name="doubleSpinBoxDirectEx"/>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <layout class="QHBoxLayout" name="horizontalLayoutDetection">
+            <item>
+             <widget class="QLabel" name="detection">
+              <property name="text">
+               <string>Detection</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QDoubleSpinBox" name="doubleSpinBoxDetection">
+              <property name="singleStep">
+               <double>0.050000000000000</double>
+              </property>
+              <property name="value">
+               <double>1.000000000000000</double>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <layout class="QHBoxLayout" name="horizontalLayoutNormalizedEx">
+            <item>
+             <widget class="QLabel" name="normalizedEx">
+              <property name="text">
+               <string>Normalized Ex</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QDoubleSpinBox" name="doubleSpinBoxNormalizedEx">
+              <property name="singleStep">
+               <double>0.050000000000000</double>
+              </property>
+              <property name="value">
+               <double>1.000000000000000</double>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <widget class="QCheckBox" name="checkBoxApplyToAllMovies">
+            <property name="text">
+             <string>Apply to All Movies</string>
+            </property>
+            <property name="checked">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QDialogButtonBox" name="buttonBoxCorrections">
+            <property name="standardButtons">
+             <set>QDialogButtonBox::Apply|QDialogButtonBox::Reset</set>
+            </property>
+            <property name="centerButtons">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="Line" name="line_3">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayoutTrajectory">
+         <item>
+          <widget class="QLabel" name="nTrajectory">
+           <property name="text">
+            <string>Trajectory</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QSpinBox" name="spinBoxTrajectory"/>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <widget class="QFrame" name="buttons">
+         <property name="frameShape">
+          <enum>QFrame::StyledPanel</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+         <layout class="QHBoxLayout" name="horizontalLayout_4">
+          <item>
+           <widget class="QPushButton" name="backButton">
+            <property name="text">
+             <string>Back</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="forwardButton">
+            <property name="text">
+             <string>Forward</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QCheckBox" name="checkBoxSkipTrajectories">
+         <property name="text">
+          <string>Only Show Included Trajectories</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="Line" name="line_4">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <spacer name="verticalSpacer">
+         <property name="orientation">
+          <enum>Qt::Vertical</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>20</width>
+           <height>40</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item>
+     <widget class="Line" name="line">
+      <property name="orientation">
+       <enum>Qt::Vertical</enum>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QFrame" name="frameMainDisplay">
+      <property name="minimumSize">
+       <size>
+        <width>1200</width>
+        <height>546</height>
+       </size>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_2">
+       <item>
+        <widget class="QFrame" name="plot">
+         <property name="frameShape">
+          <enum>QFrame::StyledPanel</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout_plot"/>
+        </widget>
+       </item>
+       <item>
+        <widget class="QFrame" name="plotFunctions">
+         <property name="minimumSize">
+          <size>
+           <width>0</width>
+           <height>40</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>16777215</width>
+           <height>40</height>
+          </size>
+         </property>
+         <property name="frameShape">
+          <enum>QFrame::StyledPanel</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+         <layout class="QHBoxLayout" name="horizontalLayout_5">
+          <property name="topMargin">
+           <number>0</number>
+          </property>
+          <property name="bottomMargin">
+           <number>0</number>
+          </property>
+          <item>
+           <widget class="QCheckBox" name="checkBoxTrajectory">
+            <property name="minimumSize">
+             <size>
+              <width>150</width>
+              <height>0</height>
+             </size>
+            </property>
+            <property name="text">
+             <string>Include Trajectory</string>
+            </property>
+            <property name="checked">
+             <bool>false</bool>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <layout class="QHBoxLayout" name="horizontalLayoutCategory">
+            <item>
+             <widget class="QLabel" name="labelCategory">
+              <property name="text">
+               <string>To Category</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QSpinBox" name="spinBoxCategory">
+              <property name="minimum">
+               <number>1</number>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <widget class="Line" name="line_5">
+            <property name="orientation">
+             <enum>Qt::Vertical</enum>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="label">
+            <property name="text">
+             <string>Click To:</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QComboBox" name="comboBoxFunctions">
+            <property name="enabled">
+             <bool>true</bool>
+            </property>
+            <property name="minimumSize">
+             <size>
+              <width>150</width>
+              <height>34</height>
+             </size>
+            </property>
+            <item>
+             <property name="text">
+              <string>Save Points</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Trim Trajectory</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>X-Correlate</string>
+             </property>
+            </item>
+           </widget>
+          </item>
+          <item>
+           <widget class="QToolButton" name="toolButtonClickPoints">
+            <property name="minimumSize">
+             <size>
+              <width>0</width>
+              <height>34</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>16777215</width>
+              <height>16777215</height>
+             </size>
+            </property>
+            <property name="text">
+             <string>Click</string>
+            </property>
+            <property name="checkable">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <layout class="QHBoxLayout" name="horizontalLayoutTimeOffset">
+            <item>
+             <widget class="QLabel" name="labelTimeOffset">
+              <property name="text">
+               <string>Set Time Offset (s)</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QDoubleSpinBox" name="doubleSpinBoxTimeOffset">
+              <property name="minimum">
+               <double>-99.000000000000000</double>
+              </property>
+              <property name="singleStep">
+               <double>0.500000000000000</double>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <widget class="QPushButton" name="pushButtonResetTrajectory">
+            <property name="minimumSize">
+             <size>
+              <width>0</width>
+              <height>34</height>
+             </size>
+            </property>
+            <property name="sizeIncrement">
+             <size>
+              <width>0</width>
+              <height>0</height>
+             </size>
+            </property>
+            <property name="text">
+             <string>Reset</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="pushButtonResetMovie">
+            <property name="minimumSize">
+             <size>
+              <width>0</width>
+              <height>34</height>
+             </size>
+            </property>
+            <property name="text">
+             <string>Reset Movie</string>
+            </property>
+            <property name="checkable">
+             <bool>false</bool>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="Line" name="line_6">
+            <property name="orientation">
+             <enum>Qt::Vertical</enum>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="saveTrajectoryButton">
+            <property name="minimumSize">
+             <size>
+              <width>0</width>
+              <height>34</height>
+             </size>
+            </property>
+            <property name="sizeIncrement">
+             <size>
+              <width>0</width>
+              <height>0</height>
+             </size>
+            </property>
+            <property name="text">
+             <string>Save Trajectory</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <spacer name="horizontalSpacer">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>40</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+         </layout>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item>
+     <widget class="QFrame" name="frameSideDisplay">
+      <property name="minimumSize">
+       <size>
+        <width>350</width>
+        <height>0</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>350</width>
+        <height>16777215</height>
+       </size>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_4">
+       <item>
+        <widget class="QFrame" name="frameSelectedPoints">
+         <property name="frameShape">
+          <enum>QFrame::StyledPanel</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout_7">
+          <item>
+           <widget class="QLabel" name="label_2">
+            <property name="text">
+             <string>Clicked Data Points:</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QComboBox" name="comboBoxSelectedPoints">
+            <property name="minimumSize">
+             <size>
+              <width>0</width>
+              <height>34</height>
+             </size>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <layout class="QHBoxLayout" name="horizontalLayout_3">
+            <item>
+             <widget class="QPushButton" name="pushButtonClearTrajectory">
+              <property name="minimumSize">
+               <size>
+                <width>0</width>
+                <height>34</height>
+               </size>
+              </property>
+              <property name="text">
+               <string>Clear</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="pushButtonClearMovie">
+              <property name="minimumSize">
+               <size>
+                <width>0</width>
+                <height>34</height>
+               </size>
+              </property>
+              <property name="text">
+               <string>Clear Movie</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <layout class="QHBoxLayout" name="horizontalLayout">
+            <item>
+             <spacer name="horizontalSpacer_3">
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>40</width>
+                <height>20</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+            <item>
+             <widget class="QPushButton" name="pushButtonSavePoints">
+              <property name="minimumSize">
+               <size>
+                <width>0</width>
+                <height>34</height>
+               </size>
+              </property>
+              <property name="text">
+               <string>Save Points</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <spacer name="horizontalSpacer_2">
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>40</width>
+                <height>20</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <spacer name="verticalSpacer_2">
+            <property name="orientation">
+             <enum>Qt::Vertical</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>20</width>
+              <height>40</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item>
+           <layout class="QHBoxLayout" name="horizontalLayout_6">
+            <item>
+             <widget class="QLabel" name="label_3">
+              <property name="text">
+               <string>Side Plot Options:</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QComboBox" name="comboBoxPlotSide">
+              <property name="minimumSize">
+               <size>
+                <width>0</width>
+                <height>34</height>
+               </size>
+              </property>
+              <property name="currentIndex">
+               <number>0</number>
+              </property>
+              <item>
+               <property name="text">
+                <string>FRET Histogram</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>X-correlation</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Raw Image</string>
+               </property>
+              </item>
+             </widget>
+            </item>
+           </layout>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QFrame" name="plotSide">
+         <property name="minimumSize">
+          <size>
+           <width>0</width>
+           <height>300</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>16777215</width>
+           <height>300</height>
+          </size>
+         </property>
+         <property name="frameShape">
+          <enum>QFrame::StyledPanel</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout_plot_side">
+          <item>
+           <spacer name="verticalSpacer_3">
+            <property name="orientation">
+             <enum>Qt::Vertical</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>20</width>
+              <height>40</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QFrame" name="frameEmpty2">
+         <property name="minimumSize">
+          <size>
+           <width>0</width>
+           <height>40</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>16777215</width>
+           <height>40</height>
+          </size>
+         </property>
+         <property name="frameShape">
+          <enum>QFrame::StyledPanel</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout_6">
+          <property name="spacing">
+           <number>5</number>
+          </property>
+          <property name="margin">
+           <number>5</number>
+          </property>
+          <item>
+           <widget class="QLabel" name="labelContact">
+            <property name="minimumSize">
+             <size>
+              <width>250</width>
+              <height>0</height>
+             </size>
+            </property>
+            <property name="text">
+             <string>www.linkedin.com/in/boyang-hua</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>2000</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>0</width>
+     <height>30</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>16777215</width>
+     <height>30</height>
+    </size>
+   </property>
+   <widget class="QMenu" name="menu_Graph">
+    <property name="title">
+     <string>&amp;Graph</string>
+    </property>
+    <addaction name="action_Plot_Intensity_Histogram"/>
+    <addaction name="action_Make_E_S_Plot"/>
+    <addaction name="action_Plot_FRET_Histogram_Overall"/>
+    <addaction name="separator"/>
+    <addaction name="action_Plot_FRET_Histogram"/>
+    <addaction name="action_Plot_Cross_Correlation"/>
+    <addaction name="separator"/>
+    <addaction name="action_Close"/>
+   </widget>
+   <widget class="QMenu" name="menu_Illumination">
+    <property name="title">
+     <string>&amp;Illumination</string>
+    </property>
+    <addaction name="action_Edit_Sequence"/>
+   </widget>
+   <addaction name="menu_Graph"/>
+   <addaction name="menu_Illumination"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar">
+   <property name="minimumSize">
+    <size>
+     <width>0</width>
+     <height>30</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>16777215</width>
+     <height>30</height>
+    </size>
+   </property>
+  </widget>
+  <action name="action_Plot_Intensity_Histogram">
+   <property name="text">
+    <string>&amp;Plot Intensity Histogram</string>
+   </property>
+  </action>
+  <action name="action_Make_E_S_Plot">
+   <property name="text">
+    <string>&amp;Make E-S Plot</string>
+   </property>
+  </action>
+  <action name="action_Plot_FRET_Histogram_Overall">
+   <property name="text">
+    <string>&amp;Plot FRET Histogram-Overall</string>
+   </property>
+  </action>
+  <action name="action_Close">
+   <property name="text">
+    <string>&amp;Close</string>
+   </property>
+  </action>
+  <action name="action_Plot_Cross_Correlation">
+   <property name="text">
+    <string>&amp;Plot Cross-Correlation</string>
+   </property>
+  </action>
+  <action name="action_Plot_FRET_Histogram">
+   <property name="text">
+    <string>&amp;Plot FRET Histogram</string>
+   </property>
+  </action>
+  <action name="action_Edit_Sequence">
+   <property name="text">
+    <string>&amp;Edit Sequence</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<settings>
+	<!--use experiment_name to briefly describe what experiment it is-->
+	<experiment_name>WT 0mM ZMP real-time VF</experiment_name>
+	<!--use directory to specify where all the movies of an experiment are stored-->
+	<!--make sure there is no space in directory-->
+	<directory>C:\Users\frank\Documents\fret_tools\</directory>
+	
+	<!--time per frame-->
+	<time_unit type="float">0.75</time_unit>
+	
+	<!--sampling size for histograms-->
+    <front_sample_length type="int">10</front_sample_length>
+    <back_sample_length type="int">10</back_sample_length>
+	
+</settings>
